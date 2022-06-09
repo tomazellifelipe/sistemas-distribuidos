@@ -23,8 +23,9 @@ def main():
         # chama operações
 
         print("Chamando operações...", flush=True)
-        print("Resposta =", eco.diga("OLÁ"))
-        print("Contador =", eco.contador())
+        print("Resposta =", eco.send("OLÁ"))
+        
+        print("Contador", eco.contador())
     except Pyro5.errors.CommunicationError as e:
         print("crash failure detected")
         print(e)
@@ -35,4 +36,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

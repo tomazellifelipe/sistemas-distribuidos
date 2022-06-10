@@ -3,7 +3,6 @@
 # Servidor de Eco Simples
 # ASDPC
 # Prof. Luiz A. de P. Lima Jr. (luiz.lima@pucpr.br)
-# Co-author Felipe Tomazelli de Lima
 
 from sys import argv
 
@@ -25,7 +24,7 @@ def main():
         # chama operações
 
         print("Chamando operações...", flush=True)
-        print("Resposta =", eco.send("OLÁ"))
+        print("Resposta =", eco.send("HI!"))
 
         print("Contador", eco.contador())
     except Pyro5.errors.CommunicationError as e:
